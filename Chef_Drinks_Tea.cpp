@@ -5,15 +5,16 @@ int main(int argc, char const *argv[])
     int t;
     cin>>t;
     while(t--){
-        int a , b , c ,d;
-        cin>>a>>b>>c>>d;
-        if(a!=c and b!=d){
-            cout<<1<<endl;
+        int n, a, b;
+        cin>>n>>a>>b;
+        if(n%a==0){
+        cout<<(n/a)*b<<endl;
+
         }
         else{
-            cout<<2<<endl;
+             cout<<(n/a+1)*b<<endl;
+
         }
     } 
-    
     return 0;
 }
